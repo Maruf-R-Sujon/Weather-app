@@ -14,19 +14,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                    <!-- user card start -->
                     <div class="card user-card">
                         <div class="card-header">
-                            <h1 class="card-title">Enter Your Location</h1>
+                            <h1 class="card-title">Enter Your Location Name</h1>
                             <p class="error text-danger">Opps! Something went wrong....</p>
                         </div>
                         <div class="card-body">
-                            <input type="text" name="locationName" id="locationName" class="form-control" autocomplete="false" spellcheck="false" placeholder="enter your city name...">
-                            <input type="button" value="check" id="detected-btn " class="btn btn-primary">
+                            <input type="text" name="locationName" id="locationName" class="form-control" autocomplete="false" spellcheck="false" placeholder="Enter your city name...">
+                            <div class="divider"></div>
+                            <input type="button" value="Dectected your location" id="detected-btn " class="btn btn-primary btn-block">
                         </div>
                     </div>
+                    <!-- user card end -->
+                    <!-- weather card start -->
                     <div class="card weather-card">
-                        <div class="card-header">
-                            <button type="button" class="btn" id="backArray"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        <div class="card-header text-left">
+                            <button type="button" class="arrow-btn" id="backArray"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                         </div>
                         <img src="./assets/img/Weather-clear.svg" alt="!" class="card-img-top">
                         <div class="card-body">
@@ -40,23 +44,22 @@
                         </div>
                         <div class="card-footer">
                             <div class="col-md-6">
-                                <span><i class="fa fa-thermometer-quarter" aria-hidden="true"></i>
-                                    <span class="feel-like">
+                                <div class="thermometer"><i class="fa fa-thermometer-quarter" aria-hidden="true"></i></div>
+                                    <div class="feel-like">
                                         <span class="numb">36</span><sapn class="deg"><sup>o</sup></sapn> C<br>
-                                        <span class="feel-title">Clear</span>
-                                    </span>
-                                </span>
+                                        <span class="feel-title">Feels like</span>
+                                    </div>
                             </div>
                             <div class="col-md-6">
-                                <span><i class="fa fa-tint" aria-hidden="true"></i>
-                                    <span class="humudity">
-                                        <span class="numb">60</span><sapn class="modulas">%</sapn><br>
+                                <div class="drop"><i class="fa fa-tint" aria-hidden="true"></i></div>
+                                    <div class="humudity">
+                                        <span class="numb">61</span><sapn class="modulas">%</sapn><br>
                                         <span class="humudity-title">Humudity</span>
-                                    </span>
-                                </span>
+                                    </div>
                             </div>
                         </div>
                     </div>
+                    <!-- weather card end -->
                 </div>
             </div>
         </div>

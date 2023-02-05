@@ -8,14 +8,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card-header{
-    text-align: center;
-}
 .user-card{
     display: block;
 }
+.card-header{
+    text-align: center;
+}
 .card{
-   border: 1px solid #a59999; 
+   border: 1px solid #676365; 
    padding: 30px 40px;
    border-radius: 5px;
    background-color: rgb(211, 229, 229);
@@ -23,9 +23,8 @@ body{
 }
 .error{
     font-size: 16px;
-}
-.text-danger{
     color: rgba(244, 72, 72, 0.95);
+    display: none;
 }
 h1{
     margin-top: 0;
@@ -34,21 +33,20 @@ h1,h2,h3,h4,h5,h6{
     font-weight: normal;
 }
 .form-control{
-    box-sizing: border-box;
     width: 100%;
     height: 35px;
-    padding-left: 5px;
+    padding-left: 10px;
     border-radius: 5px;
     font-size: 15px;
+    box-sizing: border-box;
     border: none;
 }
 .form-control:focus{
-    /* outline: none; */
-    outline-color: #2bea91;
+    outline-color: #30b474;
 }
 .divider{
     width: 100%;
-    border-bottom: 1px solid #8a8181;
+    border-top: 1px solid #8a8181;
     margin: 20px 0px 15px 0px;
 }
 .divider::before{
@@ -59,9 +57,9 @@ h1,h2,h3,h4,h5,h6{
     padding: 0px 20px;
     margin-top: -10px;
 }
-.btn{
-    border: 1px solid transparent;
-}
+/* .btn{
+    border: 10px solid transparent;
+} */
 .btn:focus{
     border: 1px solid red;
 }
@@ -70,15 +68,17 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 5px;
     padding: 10px 5px 10px 5px;
     border-radius: 5px;
-    /* outline: none; */
-    border: none;
-    background-color: rgb(31, 194, 53);
+    border: 1px solid #676365;
+    background-color: rgb(139, 248, 153);
     font-weight: bolder;
     text-transform: uppercase;
+    color: rgb(4, 95, 8);
 }
 
+
+
 .weather-card{
-    display: block;
+    display: none;
     width: 390px;
     text-align: center;
     padding: 0;
@@ -102,16 +102,14 @@ h1,h2,h3,h4,h5,h6{
 }
 .card-footer{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:50% 50%;
     justify-content: space-around;
-
 }
 .card-footer .col-md-6:last-child{
     border-left: 1px solid #323030;
-    border-top: 1px solid #323030;
 }
-.card-footer .col-md-6:first-child{
-    /* border-left: 1px solid #c7c7c7; */
+
+.card-footer .col-md-6{
     border-top: 1px solid #323030;
 }
 .card-footer .col-md-6{
@@ -120,7 +118,7 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 10px;
 }
 .thermometer, .drop{
-    color: #6040d4;
+    color: #332a92;
     font-size: 40px;
 }
 .feel-like, .humudity{

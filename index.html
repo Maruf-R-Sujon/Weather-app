@@ -18,12 +18,12 @@
                     <div class="card user-card">
                         <div class="card-header">
                             <h1 class="card-title">Enter Your Location Name</h1>
-                            <p class="error text-danger">Opps! Something went wrong....</p>
+                            <p class="error text-danger" id="infoTxt">Opps! Something went wrong....</p>
                         </div>
                         <div class="card-body">
                             <input type="text" name="locationName" id="locationName" class="form-control" autocomplete="false" spellcheck="false" placeholder="Enter your city name...">
                             <div class="divider"></div>
-                            <input type="button" value="Dectected your location" id="detected-btn " class="btn btn-primary btn-block">
+                            <input type="button" value="Dectected your location" id="detected-btn" class="btn btn-primary btn-block">
                         </div>
                     </div>
                     <!-- user card end -->
@@ -32,7 +32,7 @@
                         <div class="card-header text-left">
                             <button type="button" class="arrow-btn" id="backArray"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                         </div>
-                        <img src="./assets/img/Weather-clear.svg" alt="!" class="card-img-top">
+                        <img src="./assets/img/Weather-clear.svg" alt="!" class="card-img-top" id="tempImg">
                         <div class="card-body">
                             <h1 class="text-center font-50 temp">
                                 <span class="numb">36</span><sapn class="deg"><sup>o</sup></sapn> C
